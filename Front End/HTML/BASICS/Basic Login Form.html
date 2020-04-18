@@ -10,41 +10,43 @@
 <body>
     <form>
         <div>
-            <label for="#username" >Username</label><br>
-            <input type="text" id="username" required name="username">
+            <label for="#username">Username</label><br>
+            <input type="text" id="username" required name="username" value="Example">
         </div>
         <div>
-            <label for="#age" >Age</label><br>
+            <label for="#age">Age</label><br>
             <input type="number" id="age" required name="age">
         </div>
         <div>
-            <label for="#time" >Time Slot</label><br>
+            <label for="#time">Time Slot</label><br>
             <input type="time" id="time" required name="time">
         </div>
         <div>
-            <label for="#slevel" >Stupidity level</label><br>
-            <input type="range" id="slevel" min="0" max="10" required step="2" name="slevel">
+            <label for="#slevel">Stupidity level</label><br>
+            <input type="range" id="slevel" min="0" max="10" required step="2" name="slevel" value="0">
         </div>
         <div>
-            <label for="#dob" >Date of Birth</label><br>
+            <label for="#dob">Date of Birth</label><br>
             <input type="date" id="dob" required nname=dob>
         </div>
         <div>
-            <label for="#country" >Country</label><br>
+            <label for="#country">Country</label><br>
             <input type="text" id="country" required nname=country value="India" disabled>
         </div>
         <div>
-            <label for="#mail" >E-mail</label><br>
+            <label for="#mail">E-mail</label><br>
             <input type="email" id="mail" required placeholder="abc@example.com" name="email">
         </div>
         <div>
-            <label for="#url" >Website-Link</label><br>
-            <input type="url" id="url" required name=url>
+            <label for="#url">Website-Link</label><br>
+            <input type="url" id="url" required name="url" value="www.example.com">
+            <!-- value is used to assign a default value to the name -->
         </div>
         <div>
             <label for="#password">Password</label><br>
             <input type="password" id="password" required name="password">
         </div>
+        
         <div>
             <input type="submit">
         </div>
