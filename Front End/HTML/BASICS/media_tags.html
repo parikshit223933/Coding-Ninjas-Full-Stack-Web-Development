@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        media tags
+    </title>
+</head>
+
+<body>
+    <div>
+        <audio src="Media/file_example_MP3_5MG.mp3" controls>Play Audio</audio>
+    </div>
+    <!-- Another way -->
+    <div>
+        <audio controls>
+            <source src="Media/file_example_MP3_5MG.mp3" type="audio/mp3">
+            <source src="Media/file_example_MP3_5MG.ogg" type="audio/ogg">
+            <!-- it will start reading from the top which ever file is valid, it will read that. -->
+        </audio>
+    </div>
+</body>
+
+</html>
