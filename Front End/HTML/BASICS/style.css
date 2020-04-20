@@ -1,8 +1,44 @@
-p{
-    color:blue;
-    font-size:20px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+p {
+    color: black;
+    font-size: 20px;
+    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
 }
-h1{
+
+h1 {
     font-size: 40px;
+}
+
+h1,
+p {
+    font-family: 'Franklin Gothic Medium';
+}
+
+
+/* h4{
+    text-transform: uppercase;
+} */
+
+
+/* Inline CSS > ID > Class > Type */
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.cursive {
+    font-family: cursive;
+}
+
+
+/* li h4 {
+    font-family: 'Franklin Gothic Medium';
+    text-transform: uppercase;
+} */
+
+#blog-description {
+    color: #314831;
+}
+
+#blog-title:hover {
+    color: orange;
 }
