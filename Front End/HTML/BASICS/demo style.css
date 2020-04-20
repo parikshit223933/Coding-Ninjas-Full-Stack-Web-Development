@@ -4,10 +4,19 @@
     width: 40rem;
     /* 100vw; */
     background-color: rgb(255, 0, 0);
+    /* border-width: 6px 10px 12px;
+    border-style: dashed;
+    border-color: green; */
+    border: 4px solid magenta;
+    border-radius: 30%;
 }
 
 #div2 {
     height: 50%;
     width: 50%;
     background-color: cyan;
+}
+
+#sample-para {
+    border-left: 25px solid red;
 }
