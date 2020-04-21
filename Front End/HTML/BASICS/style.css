@@ -82,6 +82,8 @@ aside
     width:21%;
     vertical-align: top;
     margin-top:30px;
+    position:sticky;
+    top:12px;
 }
 #main-content
 {
@@ -93,6 +95,9 @@ aside
     display:inline-block;
     width:20%;
     vertical-align: top;
+    position:sticky;
+    top:12px;
+    left:12px;
 }
 #blog-logo
 {
