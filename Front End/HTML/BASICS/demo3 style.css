@@ -1,0 +1,10 @@
+#logo-image-container
+{
+    height:100vh;
+    width:100vw;
+    background-image: url("Media/blog\ logo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1000px 400px;
+    background-attachment: fixed;
+}
