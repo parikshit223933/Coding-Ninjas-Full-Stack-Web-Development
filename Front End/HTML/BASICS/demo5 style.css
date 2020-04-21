@@ -1,0 +1,34 @@
+#div1
+{
+    background-color: red;
+    height:200px;
+    width:200px;
+}
+/* span is an inline element by default and div is a block leve element by default */
+/* inline elements do not require height and width. instead, they take that much space as is requiredd by them. */
+#div2
+{
+    background-color:cyan;
+    height:200px;
+    width:200px;
+    margin-left:-4px;
+    padding-top:16px;
+}
+span
+{
+    display: block;
+}
+/* div
+{
+    display: inline;
+} */
+/* in this case, now div is an inline element, so width and height won't work.
+It will take as much space as it requires in a single line. We can't even give margins and padding in that case. */
+/* If i want to take the advantage of both inline and block level elements, then i can use a display property called
+inline-block */
+div
+{
+    display:inline-block;
+}
+/* now in inline-block level elements, there will be some space between the two elements.(which is 4px) */
+/* if we dont want this margin to be there, we can give some negative left margin to the div 2 */
