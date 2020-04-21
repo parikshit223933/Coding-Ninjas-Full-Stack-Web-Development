@@ -1,0 +1,41 @@
+/* position:
+1. Static: element will be placed at aposition where it is supposed to be. there is nothing fancy around it.
+2. relative: the element will be positioned relative to its normal position. it enables, left, right, top and bottom options. space will be reserved as for the original element position.
+3. absolute: element's position will be decided with respect to the relatively positioned parent. No spacce is reserved for this element.
+4. fixed: element stays at its position. the dimensions that are specified are with respect to the viewport.
+5. sticky: it comes in action when scrolling, it sticks to the viewport untill it is inside the parent element. threshold is defined by the top, right, left and bottom values. it stays in vision, until you have completely scrolled out the parent.
+*/
+#outer-div
+{
+    border:2px solid black;
+    margin:20px;
+    position:relative;
+}/* in case the outer div is relative and div2 is absolute, div 2 will be floating over the page. no space will be reserved for it. */
+#div1
+{
+    height:200px;
+    width:200px;
+    background-color:#393a7b;
+}
+#div2
+{
+    height:200px;
+    width:200px;
+    background-color:orange;
+    position:sticky/* fixed *//* absolute */;
+    left:20px;
+    top:20px;
+    /* even if it is not at its original position, it will still be blocked. */
+}
+#div3
+{
+    height:200px;
+    width:200px;
+    background-color:maroon;
+}
+#div4
+{
+    height:200px;
+    width:200px;
+    background-color:blueviolet;
+}
