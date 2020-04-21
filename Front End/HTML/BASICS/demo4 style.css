@@ -1,0 +1,22 @@
+#outer_div1
+{
+    width:200px;
+    height:200px;
+    background-color: mediumblue;
+    margin:auto;/* this will centralize an element */
+    /* top and bottom margins will be zero and the element will be placed in the mid position horizontly */
+    /* vertical margins collapse while horizontal margins add up */
+    padding: 102px 13px 14px 106px;
+}
+#inner_div1
+{
+    width:50%;
+    height:50%;
+    background-color: cyan;
+}
+#outer_div2
+{
+    width:200px;
+    height:200px;
+    background-color: orange;
+}
