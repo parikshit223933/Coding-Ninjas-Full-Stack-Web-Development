@@ -42,3 +42,61 @@ p {
 #blog-title:hover {
     color: orange;
 }
+/* aside section */
+.widget
+{
+    border-top:4px solid black;
+    border-bottom:4px solid black;
+    padding-bottom:20px;
+    margin-left:4%;
+}
+.widget input
+{
+    display:block;
+    background-color:#F7F7F7;
+    margin-bottom:15px;
+    padding:4px;
+    color:black;
+    font-size:1.2rem;
+}
+button[type="submit"]
+{
+    font-size:1.2rem;
+    background-color:orangered;
+    color:white;
+    padding:10px;
+}
+.widget-title
+{
+    font-size:1.5rem;
+    font-family:"comic sans ms";
+}
+main
+{
+    width:70%;
+    display:inline-block;
+}
+aside
+{
+    display:inline-block;
+    width:21%;
+    vertical-align: top;
+    margin-top:30px;
+}
+#main-content
+{
+    display:inline-block;
+    width:70%;
+}
+#author-info
+{
+    display:inline-block;
+    width:20%;
+    vertical-align: top;
+}
+#blog-logo
+{
+    width:98vw;
+    height:40%;
+    background-position: center;
+}
