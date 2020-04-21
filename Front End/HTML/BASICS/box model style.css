@@ -2,11 +2,15 @@
 {
     margin:4px;
     height:200px;
-    width:200px;
+    width:50%;
+    min-width:150px;
+    max-width:300px;
+    
     background-color:cyan;
     border:2px solid black;
     padding:2px;
     box-sizing:border-box;
     /* border box model says that the height and width that you are specifying will include the height and width of border and padding as well */
     /* content box model says that, the height and width that you are specifying are of the content area only. border and padding won't be included in the area */
+    overflow:auto;
 }
