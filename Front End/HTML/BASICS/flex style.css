@@ -1,7 +1,34 @@
 #container
 {
-    height:75vh;
-    width:75vw;
-    background-color:cyan;
+    height:500px;
+    width:500px;
+    background-color:lightslategray;
     display:flex;
+    /* flex-direction: column;
+    flex-wrap:wrap-reverse; *//* now each of them will take 200 px each */
 }
+#container div
+{
+    width:200px;
+    height:200px;
+}
+#div1
+{
+    background-color:cyan;
+}
+#div2
+{
+    background-color:red;
+}
+/* #div3
+{
+    background-color:orange;
+}
+#div4
+{
+    background-color:yellow;
+}
+#div5
+{
+    background-color:green;
+} */
