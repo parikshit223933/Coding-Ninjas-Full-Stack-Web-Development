@@ -1,32 +1,46 @@
 #container
 {
-    height:500px;
-    width:500px;
+    height:600px;
+    width:600px;
     background-color:lightslategray;
     display:flex;
     /* flex-direction: column;
     flex-wrap:wrap-reverse; *//* now each of them will take 200 px each */
-    flex-direction:column-reverse;
+    /* flex-direction:column-reverse;
     justify-content: space-around;
-    flex-wrap:wrap-reverse;
+    flex-wrap:wrap-reverse; */
     /* we can use flex direction, flex-wrap and justify content together to adjust the position of the contents inside the container */
+    flex-direction:row;
+    /* justify content works around the main axis and align items works across cross axis */
+    /* align-items: flex-end; */
+    /* align-items:center; */
+    /* align-items:stretch; */
+    /* align-items: baseline; */
+    align-items: center;
+    justify-content: space-around;
 }
 #container div
 {
     width:100px;
+    /* when align-items is set to stretch, then it will stretch the contents of the container across the cross axis,
+    but if the height is mentioned, then it will obey the hight rule which is mentioned */
     height:100px;
+    max-height: 400px;
 }
 #div1
 {
     background-color:cyan;
+    /* margin:10px; */
 }
 #div2
 {
     background-color:red;
+    /* margin:40px */
 }
 #div3
 {
     background-color:orange;
+    /* margin:80px; */
 }
 /* #div4
 {
