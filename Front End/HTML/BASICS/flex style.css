@@ -1,7 +1,7 @@
 #container
 {
     height:500px;
-    width:500px;
+    width:300px;
     background-color:lightslategray;
     display:flex;
     /* flex-direction: column;
@@ -15,10 +15,14 @@
 #div1
 {
     background-color:cyan;
+    flex-grow: 4;/* it signifies that we want the element to grow according to the space availability. */
+    flex-shrink: 4;
 }
 #div2
 {
     background-color:red;
+    flex-grow: 1;
+    flex-shrink: 1;
 }
 /* #div3
 {
