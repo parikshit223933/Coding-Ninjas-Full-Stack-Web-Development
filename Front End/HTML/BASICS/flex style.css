@@ -1,0 +1,7 @@
+#container
+{
+    height:75vh;
+    width:75vw;
+    background-color:cyan;
+    display:flex;
+}
