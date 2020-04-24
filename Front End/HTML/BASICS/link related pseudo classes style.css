@@ -1,0 +1,16 @@
+a:active
+{
+    color:red;
+}
+p:active
+{
+    background-color:pink;
+}
+a:visited
+{
+    color:green;
+}
+a:link
+{
+    color:pink;
+}
