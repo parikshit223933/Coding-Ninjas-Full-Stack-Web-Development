@@ -1,0 +1,18 @@
+#lightbox
+{
+    height:0px;
+    width:0px;
+    position:fixed;
+    top:0px;
+    left:0px;
+    overflow:hidden;
+    background-color:blue;
+    transition:all 2s ease;
+}
+#lightbox:target
+{
+    top:200px;
+    left:200px;
+    height:200px;
+    width:200px;
+}
