@@ -1,0 +1,13 @@
+ul
+{
+    list-style-type: none;
+}
+li::before
+{
+    content:"";
+    background-image: url("Media/coding\ ninjas\ logo.png");
+    display:inline-block;
+    width:40px;
+    height:40px;
+    background-size:contain;
+}
