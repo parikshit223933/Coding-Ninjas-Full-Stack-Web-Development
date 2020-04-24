@@ -1,0 +1,31 @@
+/* p::first-letter
+{
+    font-size:2rem;
+    font-weight:bold;
+    text-transform: capitalize;
+} */
+/* p::first-line
+{
+    font-size:2rem;
+    font-weight:bold;
+    text-transform: capitalize;
+} */
+p
+{
+    background-color: gray;
+}
+
+p::before
+{
+    content:"before";
+    font-size:2rem;
+    font-weight:bold;
+    text-transform: capitalize;
+}
+p::after
+{
+    content:"after";
+    font-size:2rem;
+    font-weight:bold;
+    text-transform: capitalize;
+}
