@@ -22,6 +22,7 @@ p::before
     font-weight:bold;
     text-transform: capitalize;
 }
+/* content have to be there, it can me empty though */
 p::after
 {
     content:"after";
