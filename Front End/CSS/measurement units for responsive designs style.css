@@ -9,3 +9,17 @@ html
     padding:5px;
     border:1px solid black;
 }
+@media screen and (max-width:900px)
+{
+    #div1
+    {
+        width:80%;
+    }   
+}
+@media screen and (max-width:600px)
+{
+    #div1
+    {
+        width:100%;
+    }   
+}
