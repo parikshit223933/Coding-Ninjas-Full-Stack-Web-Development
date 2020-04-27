@@ -1,15 +1,12 @@
-html
-{
-    font-size:30px;
-}
+/* 
 #div1
 {
     width:60%;
-    /* fluid layouts */
+    fluid layouts
     padding:5px;
     border:1px solid black;
-}
-@media screen and (max-width:900px)
+} */
+/* @media screen and (max-width:900px)
 {
     #div1
     {
@@ -22,4 +19,26 @@ html
     {
         width:100%;
     }   
+} */
+
+/* now trying out the mobile first view */
+#div1
+{
+    width:100%;
+    padding:5px;
+    border:1px solid black;
+}
+@media screen and (min-width:600px)
+{
+    #div1
+    {
+        width:80%;
+    }
+}
+@media screen and (min-width:900px)
+{
+    #div1
+    {
+        width:60%;
+    }
 }
