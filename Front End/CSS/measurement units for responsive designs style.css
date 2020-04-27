@@ -1,0 +1,11 @@
+html
+{
+    font-size:30px;
+}
+#div1
+{
+    width:60%;
+    /* fluid layouts */
+    padding:5px;
+    border:1px solid black;
+}
