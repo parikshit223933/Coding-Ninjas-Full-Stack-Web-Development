@@ -1,0 +1,119 @@
+@keyframes div1_animation
+{
+    from
+    {
+        border-radius: 0%;
+    }
+    to
+    {
+        border-radius: 50%;
+    }
+}
+
+
+#div1
+{
+    width:200px;
+    height:200px;
+    top:10%;
+    left:10%;
+    background-color:blue;
+    position: absolute;
+    
+    animation-name:div1_animation;
+    animation-timing-function: ease-in-out;
+    animation-duration: .1s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes div2_animation
+{
+    from
+    {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(1000deg);
+    }
+}
+#div2
+{
+    width:200px;
+    height:200px;
+    top:30%;
+    left:30%;
+    background-color: lightsalmon;
+    position:absolute;
+
+    animation-name:div2_animation;
+    animation-timing-function: ease-in-out;
+    animation-duration:1s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+
+
+@keyframes div3_animation
+{
+    from
+    {
+        border-color: black;
+        color:black;
+    }
+    100%
+    {
+        border-color:white;
+        color:white;
+    }
+}
+#div3
+{
+    width:auto;
+    height:auto;
+    top:50%;
+    left:50%;
+    border:2px solid;
+    position:absolute;
+
+    animation-name:div3_animation;
+    animation-timing-function: ease-in-out;
+    animation-duration:1s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+
+
+@keyframes div4_animation
+{
+    0%
+    {
+        transform: translateY(0px);
+    }
+    50%
+    {
+        margin-bottom:20px;
+    }
+    100%
+    {
+        transform:translateY(-100px);
+    }
+}
+#div4
+{
+    width:200px;
+    height:200px;
+    top:70%;
+    left:70%;
+    background-color: tomato;
+    position:absolute;
+
+    animation-name:div4_animation;
+    animation-timing-function: ease-out;
+    animation-duration:0.1s;
+    animation-direction: alternate;
+    animation-iteration-count: 10;
+}
