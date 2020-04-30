@@ -1,0 +1,21 @@
+.cube
+{
+    height:200px;
+    width:200px;
+    position:relative;
+    margin:100px;
+}
+.face
+{
+    height:100%;
+    width:100%;
+    position:absolute;
+    top:20%;
+    left:20%;
+    transform-style:preserve-3d;
+    perspective: 1000px;
+}
+.one
+{
+    background-color: darkred;
+}
