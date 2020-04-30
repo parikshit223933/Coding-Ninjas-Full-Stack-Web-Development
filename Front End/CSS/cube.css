@@ -1,21 +1,64 @@
+@keyframes rotation
+{
+    from
+    {
+        transform: rotate(0deg);
+    }
+    to
+    {
+        transform:rotateX(500deg) rotateY(500deg) rotateZ(500deg);
+    }
+}
 .cube
 {
     height:200px;
     width:200px;
     position:relative;
-    margin:100px;
+    margin:300px;
+    transform-style:preserve-3d;
+    perspective:10000px;
+    /* transform:rotateX(25deg) rotateY(25deg); */
+
+    animation-name: rotation;
+    animation-timing-function: ease-in-out;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 .face
 {
     height:100%;
     width:100%;
     position:absolute;
-    top:20%;
-    left:20%;
-    transform-style:preserve-3d;
-    perspective: 1000px;
+    top:10%;
+    bottom:10%;
 }
 .one
 {
     background-color: darkred;
+}
+.two
+{
+    background-color: deeppink;
+    transform: rotateY(90deg) translateZ(-100px) translateX(-100px);
+}
+.three
+{
+    background-color: rgb(47, 0, 255);
+    transform: rotateX(90deg) translateY(100px) translateZ(-100px);
+}
+.four
+{
+    background-color: rgb(255, 0, 0);
+    transform: rotateY(90deg) translateZ(100px) translateX(-100px);
+}
+.five
+{
+    background-color: rgb(0, 255, 13);
+    transform: rotateX(90deg) translateZ(100px) translateY(100px);
+}
+.six
+{
+    background-color: rgb(183, 0, 255);
+    transform: translateZ(200px);
 }
