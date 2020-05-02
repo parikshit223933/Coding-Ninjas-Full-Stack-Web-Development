@@ -1,0 +1,15 @@
+h1 {
+    height: 150px;
+    line-height: 150px;
+}
+
+.border {
+    border-width: 3px !important;
+}
+
+@media (max-width: 762px) {
+    h1 {
+        height: 100px;
+        line-height: 100px;
+    }
+}
