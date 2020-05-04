@@ -1,45 +1,19 @@
-header {
-    position: relative;
-    height: 20vw;
-    min-height: 150px;
-    background-image: linear-gradient(#e2e2e2, #a0a0a0);
+body {
+    background-image: url("../media/cn.jpg") !important;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover !important;
 }
 
 header h1 {
-    line-height: 20vw;
-    font-weight: 900;
-    font-size: 4rem;
+    line-height: 40vw;
+    z-index: 10;
 }
 
-main .media img {
-    width: 10%;
+main .card {
+    min-height: 350px;
 }
 
-@media (max-width: 1199.98px) {
-    main .media img {
-        width: 12%;
-    }
-}
-
-@media (max-width: 991.98px) {
-    main .media img {
-        width: 15%;
-    }
-}
-
-@media (max-width: 767.98px) {
-    main .media img {
-        width: 20%;
-    }
-}
-
-.border {
-    border-width: 3px !important;
-}
-
-@media (max-width: 762px) {
-    h1 {
-        height: 100px;
-        line-height: 100px;
-    }
+main .card p {
+    min-height: 250px;
 }
