@@ -1,6 +1,36 @@
-h1 {
-    height: 150px;
-    line-height: 150px;
+header {
+    position: relative;
+    height: 20vw;
+    min-height: 150px;
+    background-image: linear-gradient(#e2e2e2, #a0a0a0);
+}
+
+header h1 {
+    line-height: 20vw;
+    font-weight: 900;
+    font-size: 4rem;
+}
+
+main .media img {
+    width: 10%;
+}
+
+@media (max-width: 1199.98px) {
+    main .media img {
+        width: 12%;
+    }
+}
+
+@media (max-width: 991.98px) {
+    main .media img {
+        width: 15%;
+    }
+}
+
+@media (max-width: 767.98px) {
+    main .media img {
+        width: 20%;
+    }
 }
 
 .border {
