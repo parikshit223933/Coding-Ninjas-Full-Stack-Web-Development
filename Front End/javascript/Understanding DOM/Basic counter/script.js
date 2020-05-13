@@ -1,5 +1,9 @@
+/* "use strict"; */;//enables strict mode forgiving bbehaviour of JS is deffered.
+//strict mode is supported by almost all browsers
 function count_increaser()
 {
+    /* we can use strict and non strict mode simultaneously, by using the strict mode inside a function */
+    /* "use strict"; */
     click_count++;
     var prefix="Box Clicked ";
     var suffix=" times";
