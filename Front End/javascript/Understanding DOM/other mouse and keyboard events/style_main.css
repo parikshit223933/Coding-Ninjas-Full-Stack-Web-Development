@@ -1,0 +1,13 @@
+#outer
+{
+    margin:50px;
+    padding:50px;
+    height:200px;
+    width:200px;
+    background-color:red;
+    box-sizing:border-box;
+}
+#search
+{
+    border:1px solid black;
+}
