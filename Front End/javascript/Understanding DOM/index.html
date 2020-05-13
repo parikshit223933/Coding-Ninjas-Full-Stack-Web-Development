@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        var button = document.getElementById('btn');
+        /* button.addEventListener('click', fucntion(){
+            alert("hello");
+        }); *///getting null error
+    </script>
+    <!-- the error said that the variable button was null. this is because this script is run whn the page is not yet loaded. which means that getelement by id returned a null value to the button variable because it was not able to find any element with id == 'btn'-->
+    <!-- we should execute the script in the body tag at the last. -->
+</head>
+
+<body>
+    <!-- <button id="btn" onclick="alert('Hello!!!')">Say Hello!</button> -->
+    <button id="btn">
+        Say Hello!
+    </button>
+</body>
+
+</html>
