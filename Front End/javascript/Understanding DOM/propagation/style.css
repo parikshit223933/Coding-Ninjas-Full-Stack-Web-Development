@@ -1,0 +1,15 @@
+#outer
+{
+    margin:50px;
+    padding:50px;
+    height:200px;
+    width:200px;
+    background-color:red;
+    box-sizing: border-box;
+}
+#inner
+{
+    background-color: cyan;
+    width: 100px;
+    height:100px;
+}
