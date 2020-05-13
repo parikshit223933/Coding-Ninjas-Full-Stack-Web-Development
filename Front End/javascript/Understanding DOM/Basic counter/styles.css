@@ -1,0 +1,16 @@
+.outerbox
+{
+    width:200px;
+    height:300px;
+    margin:auto;
+    margin-top: 20%;
+    box-sizing: border-box;
+    text-align: center;
+}
+.innerbox
+{
+    width:100%;
+    height:200px;
+    background-color:red;
+    margin-top:-9%;
+}
