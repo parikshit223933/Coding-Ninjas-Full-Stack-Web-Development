@@ -28,18 +28,21 @@ button
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
+    transition:all ease-in-out 0.2s;
 }
 .square
 {
     height:100px;
     width:100px;
     background-color:white;
+    transition:all ease-in-out 0.2s;
 }
 .rectangle
 {
     width:100px;
     height:50px;
     background-color: white;
+    transition:all ease-in-out 0.2s;
 }
 .triangle-up
 {
@@ -48,6 +51,7 @@ button
     border-bottom:100px solid white;
     border-left:50px solid transparent;
     border-right:50px solid transparent;
+    transition:all ease-in-out 0.2s;
 }
 .triangle-down
 {
@@ -56,6 +60,7 @@ button
     border-top:100px solid white;
     border-left:50px solid transparent;
     border-right:50px solid transparent;
+    transition:all ease-in-out 0.2s;
 }
 .triangle-bottom-left
 {
@@ -63,6 +68,7 @@ button
     width:0px;
     border-top:100px solid white;
     border-right:100px solid transparent;
+    transition:all ease-in-out 0.2s;
 }
 .triangle-bottom-right
 {
@@ -70,6 +76,7 @@ button
     width:0px;
     border-top:100px solid white;
     border-left:100px solid transparent;
+    transition:all ease-in-out 0.2s;
 }
 .triangle-top-left
 {
@@ -77,6 +84,7 @@ button
     width:0px;
     border-bottom:100px solid white;
     border-right:100px solid transparent;
+    transition:all ease-in-out 0.2s;
 }
 .triangle-top-right
 {
@@ -84,8 +92,5 @@ button
     width:0px;
     border-bottom:100px solid white;
     border-left:100px solid transparent;
-}
-.pentagon
-{
-    
+    transition:all ease-in-out 0.2s;
 }
