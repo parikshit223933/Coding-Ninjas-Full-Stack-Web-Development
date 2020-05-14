@@ -1,96 +1,85 @@
-.outer
-{
-    margin:auto;
-    width:50%;
-    height:70vh;
-    display:flex;
-    flex-direction:column;
-    align-items: center;
-    justify-content: space-around;
+.outer {
+  margin: auto;
+  width: 50%;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
-button
-{
-    height:10%;
-    width:20%;
-    min-width:72px;
-    font-weight:bolder;
-    background-color:#d5d5d5;
-    border:1px solid salmon;
+button {
+  height: 10%;
+  width: 20%;
+  min-width: 72px;
+  font-weight: bolder;
+  background-color: #d5d5d5;
+  border: 1px solid salmon;
 }
-.container
-{
-    height:200px;
-    width:200px;
-    border-radius: 50%;
-    background-color:green;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
-    transition:all ease-in-out 0.2s;
+.container {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background-color: green;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  transition: all ease-in-out 0.2s;
 }
-.square
-{
-    height:100px;
-    width:100px;
-    background-color:white;
-    transition:all ease-in-out 0.2s;
+.square {
+  height: 100px;
+  width: 100px;
+  background-color: white;
+  transition: all ease-in-out 0.2s;
 }
-.rectangle
-{
-    width:100px;
-    height:50px;
-    background-color: white;
-    transition:all ease-in-out 0.2s;
+.rectangle {
+  width: 100px;
+  height: 50px;
+  background-color: white;
+  transition: all ease-in-out 0.2s;
 }
-.triangle-up
-{
-    height:0px;
-    width:0px;
-    border-bottom:100px solid white;
-    border-left:50px solid transparent;
-    border-right:50px solid transparent;
-    transition:all ease-in-out 0.2s;
+.triangle-up {
+  height: 0px;
+  width: 0px;
+  border-bottom: 100px solid white;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  transition: all ease-in-out 0.2s;
 }
-.triangle-down
-{
-    height:0px;
-    width:0px;
-    border-top:100px solid white;
-    border-left:50px solid transparent;
-    border-right:50px solid transparent;
-    transition:all ease-in-out 0.2s;
+.triangle-down {
+  height: 0px;
+  width: 0px;
+  border-top: 100px solid white;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  transition: all ease-in-out 0.2s;
 }
-.triangle-bottom-left
-{
-    height:0px;
-    width:0px;
-    border-top:100px solid white;
-    border-right:100px solid transparent;
-    transition:all ease-in-out 0.2s;
+.triangle-bottom-left {
+  height: 0px;
+  width: 0px;
+  border-top: 100px solid white;
+  border-right: 100px solid transparent;
+  transition: all ease-in-out 0.2s;
 }
-.triangle-bottom-right
-{
-    height:0px;
-    width:0px;
-    border-top:100px solid white;
-    border-left:100px solid transparent;
-    transition:all ease-in-out 0.2s;
+.triangle-bottom-right {
+  height: 0px;
+  width: 0px;
+  border-top: 100px solid white;
+  border-left: 100px solid transparent;
+  transition: all ease-in-out 0.2s;
 }
-.triangle-top-left
-{
-    height:0px;
-    width:0px;
-    border-bottom:100px solid white;
-    border-right:100px solid transparent;
-    transition:all ease-in-out 0.2s;
+.triangle-top-left {
+  height: 0px;
+  width: 0px;
+  border-bottom: 100px solid white;
+  border-right: 100px solid transparent;
+  transition: all ease-in-out 0.2s;
 }
-.triangle-top-right
-{
-    height:0px;
-    width:0px;
-    border-bottom:100px solid white;
-    border-left:100px solid transparent;
-    transition:all ease-in-out 0.2s;
+.triangle-top-right {
+  height: 0px;
+  width: 0px;
+  border-bottom: 100px solid white;
+  border-left: 100px solid transparent;
+  transition: all ease-in-out 0.2s;
 }
