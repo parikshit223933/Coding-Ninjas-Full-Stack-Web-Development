@@ -6,4 +6,4 @@ function a() {
     }
 }
 
-a()b();//unexpected identifier error
+/* a()b(); *///unexpected identifier error
