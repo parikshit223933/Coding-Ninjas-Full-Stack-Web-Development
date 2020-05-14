@@ -1,0 +1,95 @@
+button {
+    width: 200px;
+    height: 50px;
+    display: block;
+    margin: 30px auto;
+    font-family: monospace;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+button:hover {
+    box-shadow: 0px 0px 30px 2px grey;
+}
+
+#block {
+    padding: 50px;
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    border-radius: 50%;
+    margin: 100px auto;
+}
+
+#square {
+    width: 100px;
+    height: 100px;
+    background-color: aliceblue;
+}
+
+#rectangle {
+    width: 100px;
+    height: 50px;
+    margin-top: 25px;
+    background-color: aliceblue;
+}
+
+#circle {
+    width: 100px;
+    height: 100px;
+    background-color: aliceblue;
+    border-radius: 50%
+}
+
+#oval {
+    width: 100px;
+    height: 50px;
+    margin-top: 25px;
+    background-color: aliceblue;
+    border-radius: 100px / 50px;
+}
+
+#triangle-up {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid aliceblue;
+}
+
+#triangle-down {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 100px solid aliceblue;
+}
+
+#triangle-topleft {
+    width: 0;
+    height: 0;
+    border-top: 100px solid aliceblue;
+    border-right: 100px solid transparent;
+}
+
+#triangle-bottomleft {
+    width: 0;
+    height: 0;
+    border-bottom: 100px solid aliceblue;
+    border-right: 100px solid transparent;
+}
+
+#triangle-bottomright {
+    width: 0;
+    height: 0;
+    border-bottom: 100px solid aliceblue;
+    border-left: 100px solid transparent;
+}
+
+#triangle-right {
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-left: 100px solid aliceblue;
+    border-bottom: 50px solid transparent;
+}
