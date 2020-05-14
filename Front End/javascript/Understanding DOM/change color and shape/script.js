@@ -10,7 +10,7 @@ var available_colors = [
   "cyan",
   "pink",
   "purple",
-  "orange",
+  "orange"
 ];
 var available_shapes = [
   "square",
@@ -20,7 +20,7 @@ var available_shapes = [
   "triangle-bottom-left",
   "triangle-bottom-right",
   "triangle-top-left",
-  "triangle-top-right",
+  "triangle-top-right"
 ];
 
 document.getElementById("change-color").addEventListener("click", function () {
