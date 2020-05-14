@@ -1,0 +1,31 @@
+.outer
+{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height:200px;
+    width:30%;
+    margin:auto;
+    margin-top:10%;
+    text-align:center;
+}
+.inner
+{
+    height:30px;
+    position:relative;
+    width:70px;
+    border-radius: 20px;
+    background-color:#cccccc;
+    vertical-align: baseline;
+    box-sizing: border-box;
+    padding:3px;
+}
+.toggler
+{
+    height:100%;
+    width:50%;
+    background-color: white;
+    border-radius: inherit;
+    float:left;
+}
