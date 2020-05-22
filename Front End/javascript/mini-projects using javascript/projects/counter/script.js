@@ -73,3 +73,7 @@ function start_counting()
         }
     }, 1000)
 }
+
+
+
+/* to add a class, element.classlist.add is used and to remove a class, element.classlist.remove is used. */
