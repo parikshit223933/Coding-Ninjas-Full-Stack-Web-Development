@@ -1,0 +1,86 @@
+body {
+	margin: 0px;
+}
+input:focus {
+	outline: none;
+}
+button:focus
+{
+    outline-style: double;
+}
+.detailer {
+	margin: auto;
+	margin-top: 10vh;
+	padding-top: 5vh;
+	box-sizing: border-box;
+	width: 90vw;
+	height: 40vh;
+	color: white;
+	text-align: center;
+	background-image: linear-gradient(218deg, cyan -100%, pink 85%);
+}
+.detailer form {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin: auto;
+	width: 70%;
+}
+.detailer > form > input,
+.detailer > form > button {
+	font-size: 16px;
+}
+.detailer > form > input {
+	border-radius: 5px;
+	border: none;
+	width: 40%;
+	height: 30px;
+	box-sizing: border-box;
+	padding: 0px 5px;
+}
+.detailer > form > button {
+	background-color: white;
+	border: 0px;
+	border-radius: 20px;
+	width: 37%;
+	height: 30px;
+	box-shadow: 0px 0px 5px 1px white;
+}
+h1 {
+	letter-spacing: 5px;
+}
+
+.outer-counter {
+	width: 70%;
+	height: 30vh;
+	margin: auto;
+	margin-top: 8vh;
+	background-color: rgb(59, 59, 59);
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+.inner-container {
+	position: relative;
+	height: 50px;
+	width: 50px;
+    overflow: hidden;
+    margin:2%;
+}
+.card {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	background-color: white;
+	border: 2px solid black;
+	font-size: 43px;
+	text-align: center;
+	box-sizing: border-box;
+	overflow: hidden;
+	font-weight: bolder;
+	font-family: -apple-system, BlinkMacSystemFont, “Segoe UI”, Roboto,
+		“Helvetica Neue”, Arial, sans-serif, “Apple Color Emoji”,
+		“Segoe UI Emoji”, “Segoe UI Symbol”;
+}
