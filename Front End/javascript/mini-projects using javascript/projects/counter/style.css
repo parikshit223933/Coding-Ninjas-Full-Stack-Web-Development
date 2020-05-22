@@ -1,17 +1,16 @@
 body {
 	margin: 0px;
 }
-input:focus
-{
-    outline:none;
+input:focus {
+	outline: none;
 }
 .detailer {
 	margin: auto;
 	margin-top: 10vh;
-	padding-top: 50px;
+	padding-top: 5vh;
 	box-sizing: border-box;
 	width: 90vw;
-	height: 30vh;
+	height: 40vh;
 	color: white;
 	text-align: center;
 	background-image: linear-gradient(218deg, cyan -100%, pink 85%);
@@ -59,12 +58,11 @@ h1 {
 	justify-content: center;
 	align-items: center;
 }
-.inner-container
-{
-	position:relative;
-	height:50px;
-	width:50px;
-	overflow:hidden;
+.inner-container {
+	position: relative;
+	height: 50px;
+	width: 50px;
+	overflow: hidden;
 }
 #first,
 #second {
@@ -74,9 +72,9 @@ h1 {
 	background-color: white;
 	border: 2px solid black;
 	font-size: 43px;
-    text-align: center;
+	text-align: center;
 	box-sizing: border-box;
-    overflow: hidden;
+	overflow: hidden;
 	font-weight: bolder;
 	font-family: -apple-system, BlinkMacSystemFont, “Segoe UI”, Roboto,
 		“Helvetica Neue”, Arial, sans-serif, “Apple Color Emoji”,

@@ -17,8 +17,7 @@ button.addEventListener('click', function (event)
         window.alert("Please enter a number");
         return;
     }
-    if(total_time<=0 || total_time>9)
-    {
+    if (total_time <= 0 || total_time > 9) {
         window.alert("Please enter a number in the given range");
         return;
     }
@@ -66,11 +65,11 @@ function start_counting()
         }
         if (switcher) {
             bring_first_to_front();
-            
+
         }
         else {
             bring_second_to_front();
-            
+
         }
     }, 1000)
 }
