@@ -26,8 +26,8 @@ console.log(multiply(2, 3));
 
 
  */
-var double=x=>2*x;
-console.log(double(5));
+/* var double=x=>2*x;
+console.log(double(5)); */
 
 /* "use strict";
 function person(name)
@@ -39,3 +39,13 @@ function person(name)
 }
 var obj=new person("parikshit") */
 
+console.log(
+    
+    (function(x, f = () => x) {
+    var x;
+    var y = x;
+    x = 2;
+    return [x, y, f()];
+  })(1)
+  
+  );
