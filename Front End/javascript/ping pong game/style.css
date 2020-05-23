@@ -1,0 +1,41 @@
+body {
+	margin: 0px;
+}
+h3
+{
+    margin:0px;
+}
+#rod-one {
+	position: absolute;
+	top: 0%;
+	background-color: crimson;
+	border: 2px solid black;
+    width: 20vw;
+    box-sizing: border-box;
+    border-radius: 20px;
+    height: 5vh;
+    padding:5px;
+    text-align: center;
+}
+#rod-two {
+	position: absolute;
+	bottom: 0%;
+    background-color: crimson;
+    border-radius: 20px;;
+	border: 2px solid black;
+    width: 20vw;
+    box-sizing: border-box;
+    height: 5vh;
+    padding:5px;
+    text-align: center;
+}
+#ball {
+	height: 50px;
+    width: 50px;
+    position:absolute;
+    top:50vh;
+    border-radius: 50%;
+    background-color: magenta;
+    border:1px solid black;
+    box-sizing: border-box;
+}
