@@ -3,7 +3,6 @@
  })();
  console.log(a); */
 
-
 /* var add = (function ()
 {
     var counter = 0;
@@ -14,8 +13,6 @@
 console.log(add());
 console.log(add());
 console.log(add()); */
-
-
 
 /* arrow functions */
 /* var multiply=(x, y)=>
@@ -39,7 +36,7 @@ function person(name)
 }
 var obj=new person("parikshit") */
 
-console.log(
+/* console.log(
     
     (function(x, f = () => x) {
     var x;
@@ -48,4 +45,19 @@ console.log(
     return [x, y, f()];
   })(1)
   
-  );
+  ); */
+
+/*   var arguments = [1, 2, 3];
+var arr = () => arguments[2];
+// console.log(arr());
+
+function foo(n, a, b) {
+  var f = () => arguments[1] + n; 
+  return f();
+}
+console.log(foo(3, 2, 1));     */
+
+function fun(a, b, c, d, e) {
+  return arguments[0];
+}
+console.log(fun(1, 2, 3, 4, 5));
