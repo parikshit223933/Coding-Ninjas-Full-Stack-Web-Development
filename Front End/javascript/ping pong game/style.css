@@ -1,3 +1,7 @@
+:root
+{
+    --time-duration:12s;
+}
 body {
     margin: 0px;
 }
@@ -46,21 +50,21 @@ h3
 
 .animate-top-right
 {
-    transition:transform ease-in 2s;
-    transform: translateX(200px) translateY(-200px);
+    transition:transform linear var(--time-duration);
+    transform: translateX(2000px) translateY(-2000px);
 }
 .animate-bottom-right
 {
-    transition:transform ease-in 2s;
-    transform: translateX(200px) translateY(200px);
+    transition:transform linear var(--time-duration);
+    transform: translateX(2000px) translateY(2000px);
 }
 .animate-top-left
 {
-    transition:transform ease-in 2s;
-    transform: translateX(-200px) translateY(-200px);
+    transition:transform linear var(--time-duration);
+    transform: translateX(-2000px) translateY(-2000px);
 }
 .animate-bottom-left
 {
-    transition:transform ease-in 2s;
-    transform: translateX(-200px) translateY(200px);
+    transition:transform linear var(--time-duration);
+    transform: translateX(-2000px) translateY(2000px);
 }
