@@ -2,6 +2,12 @@
 var first_rod = document.getElementById("rod-one");
 var second_rod = document.getElementById("rod-two");
 var ball = document.getElementById("ball");
+var current_timeout_is_running = false;
+var current_score =
+{
+    first: 0,
+    second: 0,
+}
 var action =
 {
     loosing_side: "",
@@ -17,11 +23,11 @@ function centeralise_element(element)
         {
             if (action.loosing_side == "first")
             {
-                ball.style.top = first_rod.clientHeight.toString() + "px";
+                ball.style.top = (first_rod.clientHeight+5).toString() + "px";
             }
             else
             {
-                ball.style.top = (document.documentElement.clientHeight - second_rod.clientHeight - ball.clientHeight).toString() + "px";
+                ball.style.top = (document.documentElement.clientHeight - second_rod.clientHeight - ball.clientHeight-5).toString() + "px";
             }
         }
         else
@@ -69,6 +75,16 @@ function touched_upper_bar()
     let bar_left_numerical = parseInt(first_rod.style.left.substring(0, first_rod.style.left.length - 2));
     if ((ball_top_numerical <= first_rod.clientHeight) && (ball_left_numerical + (ball.clientWidth / 2) > bar_left_numerical) && (ball_left_numerical + (ball.clientWidth / 2) < bar_left_numerical + first_rod.clientWidth))
     {
+        if (!current_timeout_is_running)
+        {
+            current_timeout_is_running = true;
+            setTimeout(function ()
+            {
+                current_score.first++;
+                current_timeout_is_running = false;
+                console.log("first", current_score.first);
+            }, 200);
+        }
         return true;
     }
     return false;
@@ -80,6 +96,16 @@ function touched_lower_bar()
     let bar_left_numerical = parseInt(second_rod.style.left.substring(0, second_rod.style.left.length - 2));
     if ((ball_top_numerical + ball.clientHeight + second_rod.clientHeight >= document.documentElement.clientHeight) && (ball_left_numerical + (ball.clientWidth / 2) > bar_left_numerical) && (ball_left_numerical + (ball.clientWidth / 2) < bar_left_numerical + second_rod.clientWidth))
     {
+        if (!current_timeout_is_running)
+        {
+            current_timeout_is_running = true;
+            setTimeout(function ()
+            {
+                current_score.second++;
+                current_timeout_is_running = false;
+                console.log("second", current_score.second);
+            }, 200);
+        }
         return true;
     }
     return false;
@@ -138,7 +164,17 @@ function set_interval_for_ball()
 
             alert('Game Over');
             clearInterval(interval_id);
-
+            if (current_score.first > localStorage.getItem('first'))
+            {
+                localStorage.setItem('first', current_score.first);
+            }
+            if (current_score.second > localStorage.getItem('second'))
+            {
+                localStorage.setItem('second', current_score.second);
+            }
+            current_score.first=0;
+            current_score.second=0;
+            show_score();
         }
         else if (touched_lower_bar())//touched lower bar
         {
@@ -170,13 +206,27 @@ function set_interval_for_ball()
         }
     }, 1)
 }
-
+function show_score()
+{
+    if (localStorage.getItem('first') == null)
+    {
+        localStorage.setItem('first', 0);
+        localStorage.setItem('second', 0);
+        window.alert("This is your first time");
+    }
+    else
+    {
+        window.alert("Rod 1 has a maximum score of " + localStorage.getItem('first').toString() + "\n" + "Rod 2 has a maximum score of " + localStorage.getItem('second'));
+    }
+}
 
 centeralise_element(first_rod);
 centeralise_element(second_rod);
 centeralise_element(ball);
+show_score();
 add_event_listener_to_rods();
 set_interval_for_ball();
+
 document.addEventListener('keydown', function (event)
 {
     if (event.keyCode == 13)
