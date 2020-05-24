@@ -1,5 +1,10 @@
 body {
-	margin: 0px;
+    margin: 0px;
+}
+body::-webkit-scrollbar
+{
+    overflow:hidden;
+    display:none;
 }
 h3
 {
@@ -33,9 +38,29 @@ h3
 	height: 50px;
     width: 50px;
     position:absolute;
-    top:50vh;
     border-radius: 50%;
-    background-color: magenta;
-    border:1px solid black;
+    background-image:radial-gradient(green 0%,black 221%);
     box-sizing: border-box;
+}
+
+
+.animate-top-right
+{
+    transition:transform ease-in 2s;
+    transform: translateX(200px) translateY(-200px);
+}
+.animate-bottom-right
+{
+    transition:transform ease-in 2s;
+    transform: translateX(200px) translateY(200px);
+}
+.animate-top-left
+{
+    transition:transform ease-in 2s;
+    transform: translateX(-200px) translateY(-200px);
+}
+.animate-bottom-left
+{
+    transition:transform ease-in 2s;
+    transform: translateX(-200px) translateY(200px);
 }
