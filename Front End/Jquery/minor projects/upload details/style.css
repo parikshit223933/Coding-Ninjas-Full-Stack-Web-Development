@@ -1,0 +1,67 @@
+body {
+	margin: 0px;
+}
+form,
+aside {
+	position: absolute;
+	box-sizing: border-box;
+}
+form {
+	left: 0%;
+	height: 90%;
+	width: 65%;
+	text-align: center;
+}
+aside {
+	right: 0%;
+	width: 35%;
+	height: 100%;
+	overflow-y: scroll;
+    border-left: 4px double grey;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: flex-start;
+}
+h1 {
+	margin-top: 10%;
+	margin-bottom: 10%;
+}
+form div {
+	margin: 5%;
+}
+label {
+	font-size: 24px;
+	margin-right: 20%;
+}
+input
+{
+    font-size:20px;
+    padding:2px;
+}
+button {
+	height: 40px;
+	width: 150px;
+	font-size: 24px;
+}
+
+
+
+
+.item
+{
+    padding: 1%;
+    box-sizing: border-box;
+    width:95%;
+    min-height:50px;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size:20px;
+    font-weight:bolder;
+}
+.item:nth-child(2n)
+{
+    background-color:rgb(214, 214, 214);
+}
