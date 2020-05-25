@@ -1,4 +1,4 @@
-$("body").height(window.innerHeight-10);
+$("body").height(window.innerHeight-1);
 var items = $("#items");
 
 $("form button").click(function(e) {
