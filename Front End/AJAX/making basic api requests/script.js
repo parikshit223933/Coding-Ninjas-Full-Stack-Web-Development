@@ -3,9 +3,9 @@
 
 
 $('#fetch-image-button').click(
-    function(event)
+    function (event)
     {
-        event.preventDefault();
+        /* event.preventDefault();
         var xhrRequest=new XMLHttpRequest();
         xhrRequest.onload=function()
         {
@@ -16,7 +16,36 @@ $('#fetch-image-button').click(
             $('#dog-image').attr('src', image_url);
         }
         xhrRequest.open('get', 'https://dog.ceo/api/breeds/image/random');
-        xhrRequest.send();
+        xhrRequest.send(); */
 
+
+
+        /* $.ajax({
+            type: "get",
+            url: "https://dog.ceo/api/breeds/image/random",
+            success: function (response)
+            {
+                // let resp=JSON.parse(xhrRequest.response);
+                let image_url=response.message;
+                $('#dog-image').attr('src', image_url);
+            }
+        }); */
+
+
+
+        $.get("https://dog.ceo/api/breeds/image/radom",
+            function (data)
+            {
+                let image_url=data.message;
+                $('#dog-image').attr('src', image_url);
+            },
+        ).fail(
+            function(xhr, text_status, error_thrown)
+            {
+                console.log('failed');
+            }
+        );
     }
+
+
 );
