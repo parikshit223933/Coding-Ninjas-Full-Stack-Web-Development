@@ -59,7 +59,8 @@ button {
     justify-content: center;
     align-items: center;
     font-size:20px;
-    font-weight:bolder;
+	font-weight:bolder;
+	flex-wrap:wrap;
 }
 .item:nth-child(2n)
 {
