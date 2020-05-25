@@ -1,0 +1,40 @@
+body
+{
+    margin:0px;
+}
+body div
+{
+    margin:auto;
+}
+#toggler
+{
+    margin-top:8%;
+    position:relative;
+    width:100px;
+    height:35px;
+    border:2px solid black;
+    border-radius: 20px;
+    /* box-sizing: border-box; */
+}
+#switch
+{
+    box-sizing: border-box;
+    position:absolute;
+    height:100%;
+    width:40%;
+    background-color:black;
+    border-radius: inherit;
+}
+.right
+{
+    right:0%;
+}
+.left
+{
+    left:0%;
+}
+#text
+{
+    text-align: center;
+    margin-top:5%;
+}
