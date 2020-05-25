@@ -1,0 +1,43 @@
+body
+{
+    margin:0px;
+}
+#btn
+{
+    margin:auto;
+    margin-top:5%;
+    width:200px;
+    height:50px;
+}
+button
+{
+    font-size:20px;
+    height:100%;
+    width:100%;
+}
+#container
+{
+    margin:auto;
+    width:90vw;
+    height:auto;
+    min-height: 100px;
+    background-color: rgb(221, 255, 255);
+    margin-top:5%;
+    border-bottom:5px double grey;
+    border-left:5px double grey;
+    border-right:5px double grey;
+
+    /* container flex properties */
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.ball
+{
+    height:100px;
+    width:100px;
+    border-radius: 100%;
+    transition:all ease-in-out 1s;
+}
