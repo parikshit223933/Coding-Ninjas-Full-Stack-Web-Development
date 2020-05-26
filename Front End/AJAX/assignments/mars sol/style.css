@@ -1,0 +1,46 @@
+body
+{
+    margin:0px;
+}
+#container1
+{
+    width:100%;
+    box-sizing: border-box;
+    height:20vh;
+    margin:auto;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-image: linear-gradient(90deg, rgb(232, 255, 255), rgb(255, 255, 226));
+}
+#container1>div>input
+{
+    padding:12px;
+    font-size:16px;
+}
+#div-button button
+{
+    width:150px;
+    height:50px;
+    font-size: 20px;
+}
+#container2
+{
+    width:95%;
+    height:auto;
+    margin:auto;
+    margin-top:20px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+#container2 img
+{
+    height:200px;
+    width:200px;
+    margin:20px;
+}
