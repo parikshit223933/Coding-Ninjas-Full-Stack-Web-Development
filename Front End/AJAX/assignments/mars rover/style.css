@@ -1,0 +1,43 @@
+body
+{
+    margin:0px;
+}
+#container1
+{
+    width:100%;
+    box-sizing: border-box;
+    height:20vh;
+    margin:auto;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-image: linear-gradient(90deg, rgb(232, 255, 255), rgb(255, 255, 226));
+}
+#div-date
+{
+    font-size:20px;
+}
+#div-date input
+{
+    font-size: 20px;
+}
+#div-button button
+{
+    width:150px;
+    height:50px;
+    font-size: 20px;
+}
+#container2
+{
+    width:50vw;
+    height:30vw;
+    margin:auto;
+    margin-top:20px;
+}
+#container2 img
+{
+    height:100%;
+    width:100%;
+}
