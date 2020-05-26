@@ -1,0 +1,34 @@
+body
+{
+    margin:0px;
+}
+#container1, #container2
+{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin:auto;
+    width:100%;
+    box-sizing: border-box;
+    height:20vh;
+}
+#container1
+{
+    background-image: linear-gradient(90deg, rgb(231, 255, 255), rgb(255, 255, 230));
+}
+#container2
+{
+    width:95%;
+    height:auto;
+}
+#container1 select, #container1 button
+{
+    font-size:20px;
+}
+img
+{
+    width:200px;
+    height:200px;
+}
