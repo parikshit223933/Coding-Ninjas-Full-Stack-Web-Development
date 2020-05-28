@@ -34,16 +34,45 @@ const port=8000;
 function requestHandler(request, response)
 {
     console.log(request.url);
-    response.writeHead(200, {"content-type":"text/html"});
-    fs.readFile('./index.html', function(error, data)
+    if(request.url=="/home"||request.url=="/")
     {
-        if(error)
+        response.writeHead(200, { "content-type": "text/html" });
+        fs.readFile('./index.html', function (error, data)
         {
-            console.log("error is found", error);
-            return response.end('<h1>Error</h1>');
-        }
-        return response.end(data);
-    })
+            if (error)
+            {
+                response.end("cannot read the given file, the file which was specified in the code.");
+                return;
+            }
+            return response.end(data);
+        });
+    }
+    else if(request.url=="/profile")
+    {
+        response.writeHead(200, {"content-type":"text/html"});
+        fs.readFile('./profile.html', function(error, data)
+        {
+            if(error)
+            {
+                response.end("cannot read the given file. the file which was specified in the code");
+                return;
+            }
+            return response.end(data);
+        });
+    }
+    else
+    {
+        response.writeHead(400, {"content-type":"text/html"});
+        fs.readFile('./error.html', function(error, data)
+        {
+            if(error)
+            {
+                response.end("cannot find the specified page. the file which was specified in the code");
+                return;
+            }
+            return response.end(data);
+        });
+    }
 }
 const server=http.createServer(requestHandler);
 
