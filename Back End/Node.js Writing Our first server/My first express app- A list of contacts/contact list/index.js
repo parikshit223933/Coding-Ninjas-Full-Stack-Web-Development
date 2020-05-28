@@ -8,6 +8,7 @@ const app=express();
 
 app.get('/profile', (request, response)=>
 {
+    console.log(request);
     response.send('<h1>this is the html page. it is loaded</h1>');
 });
 
