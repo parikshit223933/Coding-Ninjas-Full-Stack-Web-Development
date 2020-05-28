@@ -1,0 +1,624 @@
+:root {
+	--background-image: url("media/background_image/3541800.jpg");
+	--jumbotron-color: #141b41;
+	--playlist-items-background-color: #1a1e33;
+	--playlist-items-background-color-on-hover: #2e3249;
+}
+body {
+	/* background-image: var(--background-image); */
+	background-image: var(--background-image);
+	
+/* 	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat; */
+	margin: 0px;
+	font-family: "Segoe UI", Arial, sans-serif;
+	color: white;
+}
+/* removing all the styles from the links and formatting them white */
+a {
+	text-decoration: none;
+	color: white;
+}
+/* removing margin for all the textual elements */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0px;
+}
+/* top navigation bar */
+.navigation-bar {
+	height: auto;
+	width: auto;
+	background-image: linear-gradient(180deg, black, rgba(0, 0, 0, 0));
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	box-sizing: border-box;
+	padding-left: 5%;
+	padding-right: 5%;
+	transition: all ease-in-out 1s; /* when the navbar loads, every property transits for 1s */
+}
+/* all the divs inside the navigation bar should be placed side by side*/
+.navigation-bar > div {
+	display: inline-block;
+}
+/* animation for the website logo */
+@keyframes rotating {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+/* website logo image */
+.website-logo img {
+	height: 50px;
+	width: 50px;
+	border-radius: 100%;
+	animation-name: rotating;
+	animation-timing-function: ease-in-out;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+}
+/* website title and general description */
+.title-combo > div {
+	vertical-align: middle;
+	display: inline-block;
+}
+/* animation for favoutites text */
+@keyframes flexible {
+	0% {
+		transform: rotate(0deg);
+	}
+	50% {
+		transform: rotateY(360deg);
+	}
+	75% {
+		transform: scale(1.2);
+	}
+	100% {
+		transform: scaleX(1);
+	}
+}
+/* favourites text */
+.favs {
+	animation-name: flexible;
+	animation-timing-function: ease-in-out;
+	animation-duration: 2s;
+	perspective: 10000px;
+	transform-style: preserve-3d;
+	animation-iteration-count: infinite;
+}
+
+/* search bar */
+.search-bar {
+	width: 20%;
+	position: relative;
+}
+/* changing the default style of the input bar */
+.search-bar input {
+	width: 100%;
+	font-size: 16px;
+	text-decoration: none;
+	border-radius: 18px;
+	border: none;
+	padding: 5px;
+	font-weight: 500;
+	text-align: center;
+	transition: all ease-in-out 0.1s;
+}
+/* search icon for input bar */
+.search-ico {
+	color: rgba(0, 0, 0, 0.5);
+}
+/* mic icon for input */
+.mic-ico {
+	color: rgba(0, 0, 0, 0.5);
+}
+/* search icon */
+.search-bar > div:nth-child(1) {
+	display: inline-block;
+	position: absolute;
+	width: min-content;
+	left: 5%;
+	top: 10%;
+	transition: all ease-in-out 0.1s;
+}
+/* mic icon */
+.search-bar > div:nth-child(3) {
+	display: inline-block;
+	position: absolute;
+	width: min-content;
+	right: 0%;
+	top: 10%;
+	transition: all ease-in-out 0.1s;
+}
+/* when the user clicks on the search bar, there should be no blue outlining */
+input:focus {
+	outline: none;
+}
+/* animation for bell image */
+@keyframes ringing_bell {
+	0% {
+		transform: rotate(-15deg);
+	}
+	50% {
+		transform: rotate(15deg);
+	}
+	100% {
+		transform: rotate(-15deg);
+	}
+}
+/* notification bell image */
+.notification-bell img {
+	width: 30px;
+	height: 30px;
+	animation-name: ringing_bell;
+	animation-duration: 0.5s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+/* profile picture of the user */
+.profile-picture img {
+	width: 45px;
+	height: 45px;
+	border-radius: 100%;
+}
+/* navigation bar is completed here */
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* main */
+main {
+	width: 100%;
+	padding: 0% 3%;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	transition: all ease-in-out 1s;
+}
+/* there are two aside sections both of them will have this class 
+(I have taken care of the re-usability of the classes and removed redundancy) */
+.aside {
+	display: inline-block;
+	overflow: hidden;
+}
+/* section one of the main part */
+.section-1 {
+	width: 70%;
+	height: 85vh;
+	overflow: scroll;
+}
+/* overflow should be scrollable but the scroll bar should be hidden*/
+.section-1::-webkit-scrollbar {
+	display: none;
+}
+/* section 2 of the main part */
+.section-2 {
+	width: 28%;
+	height: 85vh;
+	z-index: 2;
+}
+
+/* aside section 1 */
+/* jumbotron */
+.jumbotron {
+	height: 20vw;
+	width: 100%;
+	margin-top: 12px;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	background-color: var(--jumbotron-color);
+	margin-bottom: 40px;
+	position: relative;
+}
+/* image insider jumbotron */
+.jumbotron-image {
+	height: 20vw;
+	width: 20vw;
+	background-image: linear-gradient(
+			to bottom,
+			transparent,
+			rgba(20, 27, 65, 1)
+		),
+		url("media/latest\ english/roar.jpg");
+	background-size: cover;
+}
+/* right part of the jumbotron */
+.jumbotron-detail {
+	width: 67%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	box-sizing: border-box;
+	padding-right: 12px;
+}
+/* descriptive part contains the descripton of the song and action part contains the follow and play buttons */
+.descriptive-part,
+.action-part {
+	width: 100%;
+	height: max-content;
+}
+/* song name and followers */
+.song-name-main,
+.followers {
+	display: inline-block;
+}
+/* song name heading properties */
+.song-name-main h1 {
+	font-size: 2vw;
+}
+/* follower count */
+.followers {
+	position: absolute;
+	right: 0%;
+	top: 5%;
+}
+/* self explanatory */
+.followers,
+.author {
+	font-size: 1.5vw;
+}
+/* description of the jumbotron */
+.desc {
+	font-size: 1vw;
+}
+/* action part */
+/* .action-part {
+	padding-top: 2vw;
+} */
+.action-part p {
+	font-size: 1vw;
+}
+.btns > button {
+	border: 0px;
+	height: 3vw;
+	width: 10vw;
+	color: white;
+	font-size: 1.2vw;
+}
+/* play button */
+.btns > button:nth-child(1) {
+	background-image: linear-gradient(-19deg, red 0%, blue 100%);
+}
+/* follow button */
+.btns > button:nth-child(2) {
+	background-color: transparent;
+}
+/* particular item in the playlist */
+.playlist-item {
+	/* height:60px;
+    width:100%; */
+	height: 8vh;
+
+	box-sizing: border-box;
+	background-color: var(--playlist-items-background-color);
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 12px;
+	/* transition: all ease-in-out 0.1s; */
+}
+/* playlist item hovering effects */
+.playlist-item:hover {
+	background-color: var(--playlist-items-background-color-on-hover);
+}
+/* left part if the playlist item */
+.left {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	width: 30%;
+	height: 100%;
+	padding: 0% 1%;
+}
+/* center part of the playlist item which contains the duration length of the song */
+.center {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width: min-content;
+	height: 100%;
+}
+/* right part of the playlist item, which contains icons */
+.right {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width: 50px;
+	height: 100%;
+	padding-right: 2%;
+}/* now adjusting the contents of left, center and right parts */
+.left > div:nth-child(2) {
+	height: 80%;
+	min-width: 50px;
+	max-width: 50px;
+	margin: 0px 12% 0px 12%;
+	position: relative;
+}
+.left > div:nth-child(2) img {
+	width: 100%;
+	height: 100%;
+}
+.left > div:nth-child(3) p {
+	color: rgb(185, 185, 185);
+}
+/* customizing the play button */
+.play-btn {
+	background-color: black;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	opacity: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	transition: all ease-in-out 0.1s;
+}
+/* on hover effects */
+.play-btn:hover {
+	opacity: 0.7;
+}
+/* adjusting fonts in the playlist items  */
+.left div p {
+	font-size: 14px;
+}
+.center {
+	font-size: 12px;
+	color: rgb(185, 185, 185);
+}
+.right {
+	color: rgb(185, 185, 185);
+}
+.right div:nth-child(2) {
+	margin-left: 27%;
+}
+/* second section of the page starts here */
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* "more" button properties */
+label {
+	display: none;
+	position: absolute;
+	right: 0%;
+	top: 20%;
+	padding-bottom: 5px;
+	z-index: 3;
+	box-shadow: 0px 0px 2px 1px white;;
+	width: 70px;
+	font-size: 20px;
+	height: 21px;
+	text-align: center;
+	background-image: linear-gradient(red, blue);
+}
+/* on a normal display, it will be hidden */
+label ~ input {
+	display: none;
+}
+/* ASIDE SECTION -2 */
+/* this is the first section heading of the aside section 2 */
+.section-heading {
+	margin-top: 10px;
+	position: relative;
+	margin-bottom: 12px;
+}
+/* adjusting for side by side display */
+.section-heading div,
+.section-heading h1 {
+	display: inline-block;
+}
+.section-heading h1 {
+	font-size: 23px;
+}
+.section-heading div {
+	position: absolute;
+	bottom: 0%;
+	right: 0px;
+	font-size: 14px;
+}
+
+.list {
+	height: 36vh;
+	overflow: scroll;
+}
+/* hiding the scrollbar */
+.list::-webkit-scrollbar {
+	display: none;
+}
+/* this is particular item in the "list  container*/
+.list-item {
+	width: 100%;
+	height: 100px;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+	margin-bottom: 12px;
+}
+/* hovering effect for the list item */
+.list-item:hover {
+	background-color: var(--playlist-items-background-color-on-hover);
+}
+/* adjusting the name and image of the songs relative to their original position */
+.list-item > div:nth-child(1) {
+	width: 100px;
+	height: 100%;
+	position: relative;
+}
+.list-item > div:nth-child(1) > img {
+	width: 100%;
+	height: 100%;
+}
+.author-name {
+	font-size: 12px;
+	color: rgb(185, 185, 185);
+}
+.extra {
+	text-align: right;
+	height: 100%;
+}
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* Footer section starts here*/
+/* this is the container for the whole footer */
+footer {
+	position: absolute;
+	bottom: 1px;
+	width: 100%;
+	height: 60px;
+	background-color: #282828;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-content: center;
+	flex-wrap: nowrap;
+	padding: 0px 3%;
+	box-sizing: border-box;
+	z-index: 6;
+}
+/* footer is divided into 3 parts */
+/* 1. first part of the footer */
+.active-song-description {
+	/* border:1px solid white; */
+	height: 90%;
+	width: 25%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+/* the current song which is being played, this is the image container for that. */
+#song-image {
+	width: 50px;
+	height: 50px;
+	min-width: 50px;
+	min-height: 50px;
+}
+/* current song image */
+#song-image img {
+	width: 100%;
+	height: 100%;
+}
+/* heart and ban icon */
+.heart-and-ban-icon {
+	height: 100%;
+	padding-top: 4%;
+}
+/* song decscription */
+.song-desc {
+	margin-right: 1%;
+	margin-left: 1%;
+}
+/* song name */
+.song-desc div:nth-child(1) {
+	font-size: 14px;
+}
+/* song author */
+.song-desc div:nth-child(2) {
+	font-size: 12px;
+}
+
+/* 2. Second part of the footer*/
+.player {
+	width: 45%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: nowrap;
+}
+/* controls is the container for all the center controls of the player */
+.controls {
+	width: 40%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 20px;
+}
+/* this is the song-duration slider */
+#slider {
+	width: 100%;
+	font-size: 12px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: center;
+	margin-top: 5px;
+}
+/* ////////// */
+.time {
+	margin: 0px 10px;
+}
+
+/* adjusting the slider for better visuals */
+.slidecontainer {
+	width: 100%;
+}
+
+/* for audio and main center player */
+.slider {
+	-webkit-appearance: none;
+	width: 100%;
+	height: 5px;
+	background: #d3d3d3;
+	outline: none;
+	opacity: 0.5;
+	-webkit-transition: 0.2s;
+	transition: opacity 0.2s;
+}
+
+/* hover effect for the slider */
+.slider:hover {
+	opacity: 1;
+}
+
+/* these are for adjusting the dimensions and default styling of the long-slider */
+.slider::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 17px;
+	height: 17px;
+	border-radius: 50%;
+	background: #007bff;
+	cursor: pointer;
+}
+
+/* this is the circular thumb, which can be moved across the div */
+.slider::-moz-range-thumb {
+	width: 25px;
+	height: 25px;
+	background: #4caf50;
+	cursor: pointer;
+}
+
+/* third part of the footer */
+/* this contains the extra icons and slider for volume */
+/* this is also a container */
+.extras {
+	width: 20%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}

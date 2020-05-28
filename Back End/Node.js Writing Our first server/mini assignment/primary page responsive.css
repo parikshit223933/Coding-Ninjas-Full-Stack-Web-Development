@@ -1,0 +1,206 @@
+/* these are all the media queries for index.html page with the desktop first approach*/
+@media screen and (max-width: 1200px) {
+	/* animated favourites text will be hidden for this viewport width*/
+	.favs {
+		display: none !important;
+	}
+	/* reduced size of search bar */
+	.search-bar {
+		width: 30%;
+	}
+	input {
+		font-size: 11px !important;
+	}
+}
+@media screen and (max-width: 900px) {
+	/* more button vil ve visible and section 2 will be hidden by default for this viewport */
+	label[for="more"] {
+		display: block;
+	}
+	/* hidden section 2 by default */
+	.section-2 {
+		visibility: hidden;
+		opacity: 0;
+		position: absolute;
+		width: 300px;
+		height: 66vh;
+		background-color: #050043;
+		box-shadow: 0px 0px 2px 1px white;
+		right: 0px;
+		top: 23.5%;
+		z-index: 5;
+		overflow: scroll;
+		padding-left:10px;
+		transition: visibility ease-in-out 0.2s;
+		transition: opacity ease-in-out 0.2s;
+	}
+	.playlist-content {
+		overflow: visible;
+	}
+	/* re-adjusted the queue options box */
+	.queue-options {
+		position: absolute;
+		height: auto;
+		width: auto;
+		top: 7%;
+		right: 0%;
+	}
+	/* more button */
+	input[id="more"]:checked ~ .section-2 {
+		visibility: visible;
+		opacity: 1;
+	}
+	/* hide section 2 scrollbar */
+	.section-2::-webkit-scrollbar {
+		display: none;
+	}
+	/* when the section 2 is hidden, section-1 width becomes 100% to cover the whole page */
+	.section-1 {
+		width: 100%;
+	}
+	.card {
+		min-width: 250px; /* to apply the flex effect */
+	}
+	/* carousel adjustment */
+	.outer-carousel {
+		height: 9%;
+	}
+	/* carousel image */
+	.carousel img {
+		height: 23vw;
+		width: 34.5vw;
+	}
+	/* first and 3rd images of the carousel */
+	.carousel img:nth-child(1) {
+		left: 56vw;
+	}
+	.carousel img:nth-child(3) {
+		right: 56vw;
+	} /* since the size of the carousel images is increased, the hover size should also be increased */
+	.carousel img:hover {
+		height: 27vw;
+		width: 40.5vw;
+	}
+	/* music themes section */
+	.music-themes {
+		justify-content: space-around;
+	}
+	.theme-main {
+		width: 50%;
+	}
+	/* theme content */
+	/* increased theme content size */
+	.theme-content {
+		width: 12vw;
+		height: 12vw;
+	}
+	.theme-content p {
+		font-size: 3vw;
+		top: -12.5vw;
+	}
+	/* increased music themes image size */
+	.music-themes div img {
+		width: 12vw;
+		height: 12vw;
+	}
+}
+@media screen and (max-width: 700px) {
+	/* in the screens of this width, generally volume buttons are provided at the side. */
+	/* so there is no need for the volume slider at this width. so i have removed them from the display */
+	/* footer section */
+	.extras > div:nth-child(3) {
+		display: none;
+	}
+	.extras > div:nth-child(4) {
+		display: none;
+	}
+	.outer-div {
+		width: 36vw;
+		height: 24vw;
+		min-width: 123px;
+		min-height: 82px;
+	}
+	.outer-div .inner-div span {
+		font-size: 4vw;
+	}
+}
+@media screen and (max-width: 550px) {
+	/* this is the most important media query */
+	/* navigation bar section */
+	/* website image */
+	.website-logo img {
+		height: 30px;
+		width: 30px;
+	}
+	/* website name */
+	.website-name h1 {
+		font-size: 3vw;
+	}
+	/* website name */
+	.website-name h4 {
+		font-size: 2vw;
+	}
+	/* notification bell */
+	.notification-bell img {
+		width: 20px;
+		height: 20px;
+	}
+	/* profile picture */
+	.profile-picture img {
+		width: 30px;
+		height: 30px;
+	}
+	/* notification bell and profile picture */
+	.notification-bell,
+	.profile-picture {
+		margin-top: 8px;
+	}
+	/* this is the image in the footer section of the page. due to less space, it has to be removed at such lower resolutions. */
+	/* there is another option, but it will look messy and small */
+	#song-image {
+		display: none;
+	}
+
+	.theme-main {
+		width: 100%;
+	}
+	/* theme content */
+	.theme-content {
+		width: 18vw;
+		height: 18vw;
+	}
+	.theme-content p {
+		font-size: 4.5vw;
+		top: -18.8vw;
+	}
+	.music-themes div img {
+		width: 18vw;
+		height: 18vw;
+	}
+
+	/* stations */
+	/* this is the stations section- those colorful boxes in the tri-linear-gradient div */
+	#div1 {
+		width: 30vw;
+		height: 20vw;
+	}
+	#div2 {
+		width: 28vw;
+		height: 24vw;
+	}
+	#div3 {
+		width: 26vw;
+		height: 26vw;
+	}
+	#div3 img {
+		width: 12vw;
+		height: 12vw;
+	}
+	/* text part in that section which contains "stations" text */
+	#div3 p {
+		font-size: 5vw;
+	}
+	.outer-div .inner-div span {
+		font-size: 6vw;
+	}
+}
