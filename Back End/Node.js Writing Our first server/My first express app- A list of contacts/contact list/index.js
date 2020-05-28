@@ -1,15 +1,28 @@
-const express=require('express')
+const express=require('express');
+const path=require('path');
 const port=8000;
 
 const app=express();
 
 
+app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, 'views'));
 
 
-app.get('/profile', (request, response)=>
+app.get('/', (request, response)=>
 {
-    console.log(request);
-    response.send('<h1>this is the html page. it is loaded</h1>');
+    /* response.send('<h1>this is the html page. it is loaded</h1>'); */
+    var options={
+        title:"Contact List"
+    }
+    return response.render('home', options);
+});
+app.get('/practice', (request, response)=>
+{
+    var options={
+        title:"practice page"
+    }
+    return response.render('practice', options);
 });
 
 
