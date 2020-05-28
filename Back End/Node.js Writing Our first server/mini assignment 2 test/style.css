@@ -1,0 +1,13 @@
+body
+{
+    background-color: red;
+    margin:0px;
+}
+div
+{
+    color:white;
+    font-size:20px;
+    font-weight: bolder;
+    border:2px solid black;
+    text-align: center;
+}
