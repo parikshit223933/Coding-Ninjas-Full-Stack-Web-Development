@@ -19,7 +19,7 @@
     "cookie-parser": "^1.4.4",
     "crypto": "^1.0.1",
     "ejs": "^2.6.1",
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "express-ejs-layouts": "^2.5.0",
     "express-session": "^1.15.6",
     "jsonwebtoken": "^8.5.1",
