@@ -29,9 +29,8 @@ button.click(function()
                 console.log(image_link);
                 $(document.createElement('img')).attr('src', image_link).appendTo($('#container2'));
             }
+        },error:function(){
+             window.alert("Please select a valid date!");
         }
     });
-}).fail=function()
-{
-    window.alert("Please select a valid date!");
-};
+})
